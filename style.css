@@ -1,0 +1,99 @@
+
+#bg {
+
+    z-index: 0;
+    position: relative;
+    width: fit-content;
+    height: 600px;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+
+}
+
+.char-ct {
+
+    z-index: 1;
+    position: absolute;
+    bottom : 0px;
+    left: calc((800px / 2) - (35px /2));
+    width: 35px;
+    height: 54px;
+    background-image: url(images/hero.png);
+    background-position: 140px;
+    margin-top: 10px;
+}
+
+.dead-ct {
+
+    z-index: 1;
+    position: absolute;
+    bottom : 0px;
+    left: calc((800px / 2) - (35px /2));
+    width: 50px;
+    height: 54px;
+    background-image: url(images/die.png);
+    margin-top: 10px;
+
+}
+
+
+.ghost-ct {
+
+    position: absolute;
+    display: inline-block;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    width: 40px;
+    height: 52px;
+    background-image: url(images/enemy.png);
+    background-position: 0px;
+
+}
+
+.start-btn {
+    z-index: 1;
+    position: absolute;
+    top: calc((600px / 2) - (150px /2));
+    left: calc((800px / 2) - (200px /2));
+    width: 200px;
+}
+
+.start-btn:hover {
+    animation:animatedbang 1s infinite;
+}
+
+@keyframes animatedbang {
+
+0%{transform:translateY(5px);}
+
+50%{transform:translateY(-10px);}
+
+100%{transform:translateY(5px);}
+
+}
+
+.game-over-modal {
+    
+    background: cadetblue;
+    width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 70px;
+    color: aquamarine;
+    margin: 0 auto;
+    
+}
+
+.retry-btn {
+
+    width: 200px;
+    margin-top: 40px;
+
+}
